@@ -1,0 +1,112 @@
+#top-bar-wrap {
+  position: absolute;
+  width: 100%;
+}
+
+.top-bar {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  font-size: 1.4em;
+  justify-content: space-evenly;
+}
+
+.kids a span,
+.kids {
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(rgb(25, 76, 192)),
+    color-stop(20%, rgb(196, 26, 3)),
+    color-stop(40%, rgb(236, 190, 6)),
+    color-stop(60%, rgb(25, 76, 192)),
+    color-stop(80%, rgb(3, 116, 8)),
+    to(rgb(196, 26, 3))
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+}
+
+#site-header.transparent-header {
+  top: 38px;
+  text-transform: uppercase;
+}
+
+/* Teste de menu */
+#site-navigation-wrap .dropdown-menu > li > a,
+.oceanwp-mobile-menu-icon a,
+#searchform-header-replace-close {
+  padding: 15px;
+}
+
+.main-menu li + li {
+  border-left: 2px solid #ffffff;
+}
+
+ul.main-menu > li {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+li.current-menu-ancestor.current-menu-parent > a {
+  color: #dd9933 !important;
+}
+
+li.current-menu-ancestor.current-menu-parent > a:hover {
+  color: #fff !important;
+}
+
+li.current-menu-item a,
+li.current-menu-ancestor.current-menu-parent > a {
+  font-weight: 900;
+}
+
+@media screen and (max-width: 782px) {
+  .banner-header {
+    height: auto !important;
+  }
+
+  #site-header #site-logo #site-logo-inner a img {
+    width: 140px;
+  }
+  #top-bar-wrap,
+  #site-header.transparent-header {
+    position: relative;
+  }
+  #top-bar {
+    padding: 0 0;
+  }
+  #top-bar-inner {
+    display: inline-flex;
+  }
+  #site-header.transparent-header {
+    top: 0;
+  }
+}
+
+/* Navbar */
+
+.blog #site-header.navbar-shrink,
+.single #site-header.navbar-shrink,
+#site-header.navbar-shrink {
+  position: fixed;
+  background-color: #ffffff !important;
+  top: 0;
+}
+
+.blog #site-header.navbar-shrink > #site-header-inner,
+.single #site-header.navbar-shrink > #site-header-inner,
+#site-header.navbar-shrink > #site-header-inner {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.blog #site-header.navbar-shrink #site-header-inner img,
+.single #site-header.navbar-shrink #site-header-inner img,
+#site-header.navbar-shrink #site-header-inner img {
+  width: 200px;
+}
+
+/* Fim Navbar */

@@ -1,0 +1,18 @@
+@import "var-mixins";
+
+@import "geral";
+@import "header";
+@import "main";
+@import "home";
+@import "service";
+@import "clinic";
+@import "contact";
+@import "footer";
+
+.background-image-page-header-overlay {
+  display: none;
+}
+
+.oceanwp-info-wrap {
+  font-size: 1.7rem;
+}

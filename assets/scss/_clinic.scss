@@ -1,0 +1,25 @@
+.lfodonto-banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 700px;
+  &__title {
+    color: $light;
+  }
+}
+
+.about-info {
+  margin: 20px auto;
+}
+
+.file-list-wrap {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  grid-gap: 10px;
+  margin: 0;
+}
+
+.file-list-image {
+  flex: 1 250px;
+}

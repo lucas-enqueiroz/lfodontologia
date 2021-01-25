@@ -1,0 +1,26 @@
+.about-info {
+  display: flex;
+}
+
+.aside_contact {
+  width: 280px;
+  margin-left: 20px;
+}
+
+@media screen and (min-width: 780px) {
+  .page-template-page-home #main,
+  .blog #main {
+    padding-top: 150px;
+  }
+}
+
+.contato_mapa {
+  height: 450px;
+}
+
+.title {
+  color: $primary;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 40px;
+}

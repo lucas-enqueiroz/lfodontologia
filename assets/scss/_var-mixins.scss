@@ -1,0 +1,33 @@
+$primary: #ecaf39;
+$secondary: #0070b3;
+$light: #fff;
+$gray: #a8a8a8;
+
+@mixin icon {
+  border-radius: 50%;
+  border: 2px solid $primary;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+// Tipografia
+@mixin type($size) {
+  @if $size == s {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  } @else if $size == m {
+    font-size: 1.125rem;
+    line-height: 1.563rem;
+  } @else if $size == l {
+    font-size: 1.5rem;
+    line-height: 1.875rem;
+  } @else if $size == xl {
+    font-size: 2.25rem;
+    line-height: 3.38rem;
+  } @else if $size == xx {
+    font-size: 3rem;
+    line-height: 4.5rem;
+  }
+}

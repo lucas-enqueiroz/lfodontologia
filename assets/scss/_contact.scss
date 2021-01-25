@@ -1,0 +1,70 @@
+.dados,
+.sociais {
+  list-style: none;
+  margin: 0;
+  .contato-icon {
+    height: 30px;
+    width: 30px;
+  }
+}
+
+.dados {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+
+  &-link {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+
+    h4,
+    p {
+      margin: 0;
+    }
+  }
+
+  &-list__icon {
+    @include icon;
+  }
+}
+
+.sociais {
+  display: flex;
+  gap: 20px;
+  &-link {
+    @include icon;
+  }
+}
+
+.float-whatsapp {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  background-color: #25d366;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 35px;
+  box-shadow: 1px 1px 2px #888;
+  z-index: 1000;
+}
+
+.whatsapp {
+  border: 1px solid;
+  padding: 10px;
+  background-color: #ffffff;
+  border-radius: 50px;
+  text-align: center;
+  box-shadow: 1px 1px 2px #888;
+  color: #25d366;
+}
+
+.whatsapp:hover {
+  background-color: #25d366;
+  border-color: #ffffff;
+  color: #ffffff;
+}
