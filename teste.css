@@ -1,3 +1,23 @@
+.blocks-gallery-grid {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  grid-gap: 10px;
+}
+
+.blocks-gallery-item {
+  flex: 1 200px;
+}
+.blocks-gallery-item img {
+  width: 100%;
+}
+
+.n2-section-smartslider {
+  max-height: 100vh !important;
+  width: 100% !important;
+  padding: 0;
+}
+
 #top-bar-wrap {
   position: absolute;
   width: 100%;
@@ -11,8 +31,8 @@
   justify-content: space-evenly;
 }
 
-.kids a span,
-.kids {
+li.kids a span,
+span.kids {
   background: -webkit-gradient(
     linear,
     left top,
@@ -24,7 +44,7 @@
     color-stop(80%, rgb(3, 116, 8)),
     to(rgb(196, 26, 3))
   );
-  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: 700;
 }
@@ -84,6 +104,14 @@ li.current-menu-ancestor.current-menu-parent > a {
   #site-header.transparent-header {
     top: 0;
   }
+  .top-bar-grid {
+    display: grid;
+    grid-template-areas:
+      "phone phone"
+      "social1 social2";
+    font-size: 1.4em;
+    justify-content: space-evenly;
+  }
 }
 
 /* Navbar */
@@ -109,4 +137,63 @@ li.current-menu-ancestor.current-menu-parent > a {
   width: 200px;
 }
 
+.blog main {
+  padding-top: 95px;
+}
+
 /* Fim Navbar */
+
+.services-info {
+  position: absolute;
+  bottom: 0;
+}
+
+.float-whatsapp {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  background-color: #25d366;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 35px;
+  box-shadow: 1px 1px 2px #888;
+  z-index: 1000;
+}
+
+.whatsapp {
+  border: 1px solid;
+  padding: 10px;
+  background-color: #ffffff;
+  border-radius: 50px;
+  text-align: center;
+  box-shadow: 1px 1px 2px #888;
+  color: #25d366;
+}
+
+.whatsapp:hover {
+  background-color: #25d366;
+  border-color: #ffffff;
+  color: #ffffff;
+}
+
+.background-image-page-header-overlay {
+  display: none;
+}
+
+.oceanwp-info-wrap {
+  font-size: 1.7rem;
+}
+
+/* Footer */
+
+.custom-menu-widget .oceanwp-custom-menu .dropdown-menu .sub-menu li,
+.custom-menu-widget .oceanwp-custom-menu ul li {
+  border-bottom: 0;
+}
+ {
+  border-bottom: 0;
+}
+
+/* Fim Footer */

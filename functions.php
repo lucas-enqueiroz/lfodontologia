@@ -114,10 +114,8 @@ add_action( 'init', 'categoria_servico' );
 function new_excerpt($length) {
 	return 20;
 }
-
 add_filter('excerpt_length', 'new_excerpt');
 
-add_action('wp_head', 'banner_style');
 function banner_style(){
 ?>
 
@@ -133,4 +131,17 @@ function banner_style(){
 }
 </style>
 <?php
-};
+}
+add_action('wp_head', 'banner_style');
+
+function whatsapp_link(){
+?>
+
+<a class="float-whatsapp" href="https://wa.me/5511945402048?text=Ola, gostaria de agendar uma consulta" target="_blank">
+  <i aria-hidden="true" class="fab fa-whatsapp"></i>
+</a>
+<?php
+}
+add_action('wp_footer', 'whatsapp_link');
+
+require_once( get_stylesheet_directory(). '/inc/shortcode/contact.php' );

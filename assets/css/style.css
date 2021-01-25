@@ -48,7 +48,7 @@
 .kids a span,
 .kids {
   background: -webkit-gradient(linear, left top, right top, from(#194cc0), color-stop(20%, #c41a03), color-stop(40%, #ecbe06), color-stop(60%, #194cc0), color-stop(80%, #037408), to(#c41a03));
-  background-clip: text;
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: 700;
 }

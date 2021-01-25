@@ -25,12 +25,16 @@ get_header();
   
   if ($service_content !== '') {
     foreach($service_content as $content) { 
-
+      
+  ?>
+  <article class="service_article">
+    <?php
       $service_image = wp_get_attachment_image_src( $content['service_photo_id'], 'medium');
         
-        if(isset($service_image[0])): ?>
-  <img class="service_img" src="<?php echo $service_image[0] ?>" alt="<?php the_title(); ?>">
-  <?php endif; 
+        if(isset($service_image[0])): 
+  ?>
+    <img class="service_img" src="<?php echo $service_image[0] ?>" alt="<?php the_title(); ?>">
+    <?php endif; 
       
       echo wpautop( $content['service_description'], true ); 
     
@@ -41,19 +45,16 @@ get_header();
   }
   
   ?>
-
+  </article>
   <?php 
     $url = esc_url( get_post_meta( get_the_ID(), 'service_embed', 1 ) );
     echo wp_oembed_get( $url );
   ?>
 </section>
 
-<section class="container">
-  <div class="contato_sidebar">
-    <h2>Entre Em Contato E Agende Sua Consulta</h2>
-    <?php  get_template_part('parts/contact'); ?>
-  </div>
-
+<section class="container contato_sidebar">
+  <h2>Entre Em Contato E Agende Sua Consulta</h2>
+  <?php  get_template_part('parts/contact'); ?>
 </section>
 
 <?php endwhile; else: endif; ?>
