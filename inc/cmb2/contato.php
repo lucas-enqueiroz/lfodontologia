@@ -8,7 +8,7 @@ function cmb2_fields_contato() {
     'object_types'  => ['page'],
     'show_on'       => [
       'key'   => 'page-template',
-      'value' => 'page-contato.php',
+      'value' => 'page-contact.php',
     ],
   ]);
 

@@ -4,7 +4,7 @@ get_header();
 ?>
 
 <?php
-echo do_shortcode('[smartslider3 slider="4"]');
+echo do_shortcode('[smartslider3 slider="3"]');
 ?>
 
 <section class="container servicos">
@@ -12,7 +12,9 @@ echo do_shortcode('[smartslider3 slider="4"]');
   <h2 class="title">Nossas especialidades</h2>
   <ul class="service-list">
 
-    <?php	$the_query = new WP_Query ( [	'post_type' => 'service' ] ); ?>
+    <?php	$the_query = new WP_Query ( [	'post_type' => 'service', 'posts_per_page' => '30', 
+	'orderby' => 'title',
+	'order'   => 'ASC', ] ); ?>
 
     <?php if ( $the_query->have_posts() ) : while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
 

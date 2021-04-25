@@ -10,7 +10,7 @@ function cmb2_fields_clinica_banner() {
     'object_types'  => [ 'page' ],
     'show_on'       => [
       'key'   => 'page-template',
-      'value' => 'page-clinica.php',
+      'value' => 'page-about.php',
     ],
   ]);
 
@@ -42,7 +42,7 @@ function cmb2_fields_clinica_contato() {
       'object_types'  => [ 'page' ],
       'show_on'       => [
         'key'   => 'page-template',
-        'value' => 'page-clinica.php',
+        'value' => 'page-about.php',
       ],
       'show_names'    => true, // Show field names on the left
    ] );

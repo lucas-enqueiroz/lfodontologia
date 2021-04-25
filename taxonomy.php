@@ -1,28 +1,33 @@
-<!-- Adiciona o cabeçalho (header.php) -->
 <?php get_header(); ?>
 
-<!-- O loop -->
-<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-<!-- Container do artigo -->
-<div class="artigo-container">
+<section class="container servicos">
+	
+  <h1 class="title"><?php single_term_title(); ?></h1>
 
-  <!-- Título do post -->
-  <a href="<?php the_permalink(); ?>">
-    <h1>
-      <?php the_title(); ?>
-    </h1>
-  </a>
+<?php if ( have_posts() ) : ?>
 
 
 
-  <!-- Conteúdo do post -->
-  <?php the_content(); ?>
+  <ul class="service-list">
 
-</div>
+    <? while ( have_posts() ) : the_post(); ?>
 
-<?php endwhile; ?>
+    <li class="service-list__item">
+      <a class="service-list__link" href="<?php the_permalink(); ?>">
+        <?php if ( has_post_thumbnail() ) { the_post_thumbnail('thumbnail'); }  ?>
+        <h3 class="service-list__title"><?php the_title(); ?></h2>
+          <?php the_content(); ?>
+      </a>
+    </li>
+
+    <?php endwhile; ?>
+
+
+  </ul>
+
 <?php endif; ?>
+	
+</section>
 
-<!-- Adiciona o rodapé (footer.php) -->
 <?php get_footer(); ?>

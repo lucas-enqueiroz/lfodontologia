@@ -52,6 +52,13 @@ function cmb2_fields_single_services() {
     'text'    => [ 'add_upload_file_text' => 'Adicionar/Atualizar banner' ],
   ]);
 
+  $cmb->add_field([
+    'name'    => 'Resumo',
+    'id'      => 'service_resume',
+    'desc'    => 'Coloque aqui o resumo do serviço',
+    'type'    => 'wysiwyg',
+  ]);
+
   $serviceContent = $cmb->add_field([
     'name'        => 'Conteúdo do serviço',
     'id'          => 'service_content',
