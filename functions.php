@@ -138,11 +138,7 @@ function whatsapp_link(){
 ?>
 
 <a class="float-whatsapp" href="https://wa.me/5511945402048?text=Ola, gostaria de agendar uma consulta" target="_blank">
-<<<<<<< HEAD
-  <i class="fab fa-whatsapp"></i>
-=======
   <i aria-hidden="true" class="fab fa-whatsapp"></i>
->>>>>>> 4ed89d90119eb2966b8029393431297272d043e0
 </a>
 <?php
 }
